@@ -12,7 +12,7 @@ public abstract class Instrument {
     }
 
     // Validator
-    public void validatePrice(double price) {
+    private void validatePrice(double price) {
         if (price < 0.0) {
             throw new IllegalArgumentException("Price cannot be negative. Provided: " + price);
         }
@@ -30,7 +30,6 @@ public abstract class Instrument {
     public void setPrice(double price) {
         validatePrice(price);
         this.price = price;
-        System.out.println("New price set successfully:" + price);
     }
 
     public abstract void play();
