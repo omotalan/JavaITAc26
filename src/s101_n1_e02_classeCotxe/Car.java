@@ -10,6 +10,16 @@ public class Car {
         this.power = power;
     }
 
+    // Getters
+    public static String getModel() {
+        return model;
+    }
+
+    // Setters
+    public static void setModel(String modelName) {
+        model = modelName;
+    }
+
     public static void brake() {
         System.out.println("El vehicle està frenant");
     }
