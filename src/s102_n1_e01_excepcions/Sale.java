@@ -20,11 +20,7 @@ public class Sale {
     public double calculateTotal() {
         // Check if list is empty
         if (productList == null || productList.isEmpty()) {
-            try {
-                throw new EmptySaleException("Per fer una venda primer has d’afegir productes");
-            } catch (EmptySaleException e) {
-                throw new RuntimeException(e);
-            }
+            throw new EmptySaleException("Per fer una venda primer has d’afegir productes");
         }
         for (Product prod : productList) {
             totalPrice += prod.getPrice();
