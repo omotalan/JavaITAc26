@@ -1,4 +1,4 @@
-package s101_e01_instrument;
+package s101_n1_e01_instrument;
 
 public abstract class Instrument {
 
